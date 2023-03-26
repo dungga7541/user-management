@@ -1,0 +1,69 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    table{
+        max-width: 700px;
+        border-collapse: collapse;
+        margin: auto;
+        font-size: 0.9rem;
+        box-shadow: 0 0 20px rgba(0,0,0,0.15);
+        thead{
+            tr{
+                background-color: #327f87;
+                color: #ffffff;
+                text-align: left;
+
+            }
+        }
+        th,td{
+            padding: 12px 15px;
+        }
+        tbody{
+            tr{
+                border-bottom: 1px;
+            }
+            tr:nth-child(4n - 2) {
+                background: lavenderblush;
+            }
+            tr:nth-child(4n - 1) {
+                background: azure;
+            }
+            tr:nth-child(4n) {
+                background: lavender;
+            }
+            .btn{
+                border: none;
+                color: white;
+                padding: 5px 8px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                border-radius: 5px;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            .btnEdit{
+                background-color: #81a135;
+            }
+            .btnDelete{
+                background-color: #f44366;
+            }
+            .btnView{
+                background-color: #9ed9db;
+                color: black;
+            }
+            
+        }
+    }
+}
+@media only screen and (max-width:46.1875em) {
+
+    table{
+        width: 40%;
+
+    }
+}
